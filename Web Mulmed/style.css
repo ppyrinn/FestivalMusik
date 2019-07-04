@@ -1,0 +1,628 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+/*=========================================================================
+                            LANDING PAGE CSS
+===========================================================================*/
+
+#landing{
+    background: url("asset/landing/landing.png") no-repeat top center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    padding:0px;
+    display: flex;
+}
+
+/*--------LEFT-SIDE----------*/
+
+#scene{
+    margin-left: -5px;
+    margin-top: -5px;
+    height: 100vh;
+}
+
+.landing-img{
+    height: 100%;
+}
+
+.landing-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+/*--------RIGHT-SIDE----------*/
+
+#header{
+    float: right;
+    margin: 10% 5% 50px 50px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+#logo{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-width: 300px;
+}
+
+@media only screen and (min-width: 1000px){
+    .icon{
+        display: block;
+        justify-content: center;
+        width: 50px;
+        min-width: 20px;
+        height: auto;
+        float: left;
+        margin: 0px 0px 0px 20%;
+    }
+
+    .icon img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .icon{
+        display: block;
+        justify-content: center;
+        width: 50px;
+        min-width: 20px;
+        height: auto;
+        float: left;
+        margin: 0px 0px 0px 50%;
+    }
+
+    .icon img{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+    }
+}
+
+/*=========================================================================
+                            LINE-UP PAGE CSS
+===========================================================================*/
+
+#lineup{
+    background-image: linear-gradient(to bottom right, #64aabe, #CEBFB3);
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+}
+
+/*--------LEFT-SIDE----------*/
+
+#pageTitle{
+    width: 50vw;
+    height: 100vh;
+    float: left;
+}
+
+#perform{
+    width: 50vw;
+    height: 100vh;
+    background-color: #ffffff;
+    opacity: 0.3;
+    position: absolute;
+    margin-left: -500px;
+}
+
+#perform h2{
+    font-family: 'Rubik';
+    font-size: 3.5vw;
+    color: #2B4162;
+    text-align: center;
+    width: 50vw;
+    height: auto;
+    margin-top: 50%;
+}
+
+/*--------RIGHT-SIDE----------*/
+
+#artists{
+    width: 50vw;
+    height: 100vh;
+    float: right;
+    margin-left: 50%;
+    position: absolute;
+}
+
+#timeline{
+    width: 35vw;
+    height: 80vh;
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.line{
+    width: 1%;
+    height: 100%;
+    float: right;
+    background-color: #2B4162; 
+    margin-right: 25%;
+    position: relative;
+}
+
+.bullet{
+    background-color: #2B4162;
+    float: right;
+    margin-right: -3%;
+    width: 5%;
+    height:0;
+    padding-bottom: 5%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.bullet-1{
+    margin-top: 3vh;
+}
+
+.bullet-2{
+    margin-top: 31vh;
+    margin-right: -5%;
+}
+
+.bullet-3{
+    margin-top: 60vh;
+    margin-right: -5%;
+}
+
+.date{
+    position: relative;
+    float: right;
+    width: 5vw;
+    height: 5vh;
+    margin-right: -20%;
+}
+
+.date h3{
+    font-family: 'Rubik';
+    font-size: 1.2vw;
+    color: #000000;
+    text-align: center;
+}
+
+.date-1{
+    margin-top: 1vh;
+}
+
+
+.date-2{
+    margin-top: 29vh;
+}
+
+
+.date-3{
+    margin-top: 58vh;
+}
+
+
+.photo{
+    width: 25vw;
+    height: 20vh;
+    float: left;
+    position: relative;
+    margin-left: -2vw; 
+}
+
+.photo img{
+    width: 15vw;
+    height: 20vh;
+    object-fit: fill;
+    float: right;
+}
+
+.photo a{
+    color: #000000;
+}
+
+.photo-1{
+    margin-top: 1vh;
+}
+
+.photo-2{
+    margin-top: 9vh;
+}
+
+.photo-3{
+    margin-top: 9vh;
+}
+
+.photo h3{
+    font-family: 'Rubik';
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.show-more{
+    width: 7vw;
+    height: 5vh;
+    border: double;
+    border-color: #2B4162;
+    float: right;
+    margin-right: 1vw;
+}
+
+.show-more h3{
+    font-family: 'Rubik';
+    font-size: 0.8vw;
+}
+
+.show-more:hover{
+    border-color: #ffffff;
+    background-color: #2B4162;
+    opacity: 0.7;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.show-more:hover h3{
+    font-family: 'Rubik';
+    font-size: 0.8vw;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/*-------------Show More Popup-----------------*/
+
+.popup-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255,255,255,0.7);
+    left: 0;
+    top: 0;
+}
+
+.modal-content{
+    background-image: linear-gradient(to bottom right, #64aabe, #CEBFB3);
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    height: 70%;
+}
+
+.modal-content h3{
+    font-family: 'Rubik';
+    font-size: 2vw;
+    color: #ffffff;
+}
+
+.close{
+    color: #2B4162;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content-detail{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.detail-container{
+    width: 19vw;
+    height: 20vh;
+    margin: 1px 1px 1px 1px;
+}
+
+.content-detail img{
+    width: 19vw;
+    height: 20vh;
+    position: relative;
+    display: block;
+}
+
+.artist-detail{
+    width: 19vw;
+    height: 20vh;
+    background-color: rgba(255,255,255,0.8);
+    position: relative;
+    margin-top: -20vh;
+    opacity: 0;
+    transition :.5s ease;
+}
+
+.detail-container:hover .artist-detail{
+    opacity: 1;
+}
+
+.schedule{
+    margin: 12% auto;
+    width: 19vw;
+    height: 10vh;
+    position: absolute;
+}
+
+.schedule h3{
+    font-family: 'Rubik';
+    font-size: 1.3vw;
+    color: #000000;
+    text-align: center;
+    line-height: 20px;
+}
+
+hr{
+    border: 2px solid #000000;
+}
+
+/*=========================================================================
+                            TICKET PAGE CSS
+===========================================================================*/
+
+#ticket{
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    background-image: linear-gradient(to top left, #CEBFB3, #E0DEDC);
+}
+
+#ticket h1{
+    font-family: 'Rubik';
+    font-size: 3.5vw;
+    color: #ffffff;
+    width: 100%;
+    height: 20%;
+    line-height: 20vh;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 0 2vw #E0DEDC;
+}
+
+.ticket-container{
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    margin: 5% auto;
+    display: flex;
+}
+
+.ticket-variant-container{
+    position: relative;
+    margin-top: 12%;
+    margin-left: 8%;
+    width: 15vw;
+    height: 5vh;
+}
+
+.ticket-variant{
+    width: 15vw;
+    height: 5vh;
+    background-color: #2B4162;
+    border: 0.2vw double #E0DEDC;
+    position: relative;
+}
+
+.ticket-variant h3{
+    font-family: 'Rubik';
+    font-size: 1vw;
+    color: #ffffff;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.variant-detail{
+    position: relative;
+    width: 15vw;
+    height: 0;
+    transition: all .3s ease-out;
+    margin-top: -1vh;
+}
+
+.ticket-variant-container:hover .variant-detail-1{
+    margin-top: -27vh;
+    height: 25vh;
+    border: 0.2vw double #E0DEDC; 
+    background-color: #2B4162; 
+}
+
+.ticket-variant-container:hover .variant-detail-2{
+    margin-top: -0.2vh;
+    height: 25vh;
+    border: 0.2vw double #E0DEDC; 
+    background-color: #2B4162; 
+}
+
+.ticket-desc{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.ticket-desc h3{
+    font-family: 'Rubik';
+    font-size: 1vw;
+    color: #ffffff;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.ticket-desc p{
+    font-family: 'Rubik';
+    font-size: 0.7vw;
+    color: #ffffff;
+    text-align: center;
+    margin: 5%;
+    overflow-y: hidden;
+    transition: .5s ease;
+}
+
+.desc-style{
+    opacity: 0;
+}
+
+.ticket-variant-container:hover .desc-style{
+    opacity: 1;
+}
+
+.ticket-price{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: -30%;
+    transition: .3s ease;
+}
+
+.ticket-variant-container:hover .ticket-price{
+    margin-top: 0%;
+}
+
+.ticket-price h3{
+    font-family: 'Rubik';
+    font-size: 1vw;
+    text-align: center;
+    margin: 20% auto;
+    color: #ffffff;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.ticket-variant-container:hover .ticket-price h3{
+    opacity: 1;
+}
+
+.ticket-price button{
+    margin: 5% auto;
+    width: 5vw;
+    height: 5vh;
+    background-color: #ffffff;
+    border:none;
+    border-radius: 1vw;
+    text-decoration: none;
+    font-family: 'Rubik';
+    font-size: 1vw;
+    color: #2B4162;
+    font-weight: bold;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.ticket-variant-container:hover .ticket-price button{
+    opacity: 1;
+}
+
+/*=========================================================================
+                            MAP PAGE CSS
+===========================================================================*/
+
+#map{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom left, #CEBFB3, #ffffff);
+}
+
+/*--------LEFT-SIDE----------*/
+
+#loc{
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    float: left;
+}
+
+#google-map{
+    height:100vh;
+    width:50vw;
+}
+
+.gmap-canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100vh;
+    width:50vw;
+}
+
+.gmap-canvas iframe{
+    width: 50vw;
+    height: 100vh;
+}
+
+/*--------RIGHT-SIDE----------*/
+
+#stage-map{
+    float: right;
+    width: 50vw;
+    height: 100vh;
+}
+
+#stage-map img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*=========================================================================
+                            SPONSOR PAGE CSS
+===========================================================================*/
+
+#sponsor{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #E0DEDC, #64aabe);
+}
+
+#sponsor h2{
+    font-family: 'Rubik';
+    font-size: 5vw;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 5vw #CEBFB3;
+}
+
+.sponsor-container{
+    width: 90%;
+    height: 50vh;
+    margin: 5%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sponsor-container img{
+    width: 10vw;
+    height: 10vh;
+    object-fit: contain;
+}
